@@ -99,6 +99,7 @@ body {
 }
 .header-link {
   display: block;
+  position: relative;
   padding-top: 24px;
   padding-bottom: 24px;
   color: #2e2f42;
@@ -107,10 +108,25 @@ body {
   line-height: 1.5;
   text-decoration: none;
   letter-spacing: 0.02em;
+
+  transition: color 300ms ease 0ms;
 }
 .header-link:hover,
 .header-link:focus {
   color: #404bbf;
+}
+.header-link.active {
+  color: #404BBF;
+}
+.header-link.active::after{
+content: " " ;
+position: absolute;
+bottom: -1px;
+display: block;
+width: 100%;
+height: 4px;
+border-radius: 2px;
+background-color: #404BBF;
 }
 
 .header-address-list {
@@ -133,6 +149,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+  transition: color 300ms ease 0ms;
 }
 .header-address-link:hover,
 .header-address-link:focus {
@@ -184,10 +201,11 @@ body {
   display: block;
   padding: 16px 32px;
   margin: 0 auto;
+  transition: background-color 300ms ease 0ms;
 }
 .hero-button:hover,
 .hero-button:focus {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 /*feature*/
@@ -309,6 +327,8 @@ height: 100%;
 color: #F4F4FD;
 background-color: #4D5AE5;
 border-radius: 50%;
+transition: background-color 300ms ease 0ms;
+
 }
 .socials-link:hover,
 .socials-link:focus{
@@ -346,6 +366,37 @@ border-radius: 50%;
 }
 .portfolio-block {
   width: calc((100% - 48px) / 3);
+
+}
+
+.portfolio-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: transform 500ms ease-in;
+  transform: translateY(100%);
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 40px 32px;
+
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #F4F4FD;
+background: #4D5AE5;
+}
+.portfolio-block:hover .overlay{
+  transform: translateY(0);
 }
 .portfolio-block-item {
   padding: 32px 16px;
@@ -422,6 +473,7 @@ height: 100%;
 color: #F4F4FD;
 background-color: #4D5AE5;
 border-radius: 50%;
+transition: background-color 300ms ease 0ms;
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus{
