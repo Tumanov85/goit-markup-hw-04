@@ -109,7 +109,7 @@ body {
   text-decoration: none;
   letter-spacing: 0.02em;
 
-  transition: color 300ms ease 0ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .header-link:hover,
 .header-link:focus {
@@ -149,7 +149,7 @@ background-color: #404BBF;
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
-  transition: color 300ms ease 0ms;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .header-address-link:hover,
 .header-address-link:focus {
@@ -201,7 +201,7 @@ background-color: #404BBF;
   display: block;
   padding: 16px 32px;
   margin: 0 auto;
-  transition: background-color 300ms ease 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -327,7 +327,7 @@ height: 100%;
 color: #F4F4FD;
 background-color: #4D5AE5;
 border-radius: 50%;
-transition: background-color 300ms ease 0ms;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 
 }
 .socials-link:hover,
@@ -380,7 +380,7 @@ transition: background-color 300ms ease 0ms;
   width: 100%;
   height: 100%;
 
-  transition: transform 500ms ease-in;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transform: translateY(100%);
 
 
@@ -473,7 +473,7 @@ height: 100%;
 color: #F4F4FD;
 background-color: #4D5AE5;
 border-radius: 50%;
-transition: background-color 300ms ease 0ms;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .footer-socials-link:hover,
 .footer-socials-link:focus{
