@@ -62,7 +62,9 @@ body {
   padding: 0 15px;
   position: relative;
   margin-left: auto;
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -206,10 +208,7 @@ background-color: #404BBF;
 
 /*feature*/
 .feature-container{
-  display: flex; 
-  align-items: center;
-  justify-content: center;
-  height: 112px;
+
 }
 .visually-hidden {
   position: absolute;
@@ -252,10 +251,15 @@ background-color: #404BBF;
   letter-spacing: 0.02em;
 }
 .feature-item {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
   color: #434455;
   font-size: 16px;
   letter-spacing: 0.02em;
-  width: 264px;
+
 }
 /* our team*/
 .team {
@@ -398,7 +402,9 @@ color: #F4F4FD;
 background: #4D5AE5;
 }
 .portfolio-block:hover .overlay{
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+   0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translateY(0);
 }
 .portfolio-block-item {
